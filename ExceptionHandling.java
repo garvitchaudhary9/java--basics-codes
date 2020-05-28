@@ -10,8 +10,18 @@ public class ExceptionHandling {
 		catch(ArithmeticException e) {
 			System.out.println(e.getMessage()+" error occured");
 		}
-		System.out.println("very important code,will run");
-
+		finally {
+			System.out.println("sorry for the inconvineance ");
+		}
+		System.out.println("very important code,will run ");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("after delay");
+		
 	}
 
 }
